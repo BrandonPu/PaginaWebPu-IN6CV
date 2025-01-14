@@ -1,0 +1,76 @@
+body{
+    background-image: url('assets/image/FondoLibros.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#porque-me-gusta, #tiempo-dedicado, #otros-aspectos {
+    background-color: #e5dcca;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#porque-me-gusta .content-wrapper, 
+#tiempo-dedicado .content-wrapper, 
+#otros-aspectos .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#porque-me-gusta .content-wrapper, 
+#tiempo-dedicado .content-wrapper, 
+#otros-aspectos .content-wrapper {
+    flex-direction: row;
+}
+
+#porque-me-gusta h2, 
+#tiempo-dedicado h2, 
+#otros-aspectos h2 {
+    font-size: 1.75rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+#porque-me-gusta p, 
+#tiempo-dedicado p, 
+#otros-aspectos p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+#porque-me-gusta .image-content, 
+#tiempo-dedicado .image-content, 
+#otros-aspectos .image-content {
+    flex: 0 0 40%;
+    max-width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #0056b3;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}

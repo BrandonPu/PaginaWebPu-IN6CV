@@ -1,4 +1,4 @@
-/*encabezado*/
+/* Encabezado */
 header {
     background: #3498db;
     color: white;
@@ -8,15 +8,102 @@ header {
 }
 
 header h1 {
-    font-size: 28px;
+    font-size: 1.75rem; /* Mejor usar rem para mayor flexibilidad */
     margin-bottom: 10px;
 }
 
 header ul li a {
     color: white;
-    font-size: 18px;
+    font-size: 1.125rem;
     transition: color 0.3s;
 }
 
-/*Biografia*/
+/* Biografía */
+#mi-biografia .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+#mi-biografia .text-content {
+    flex: 1;
+    max-width: 60%;
+}
+
+#mi-biografia .image-content {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Expectativas 2025 */
+
+#expectativas-2025 {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#expectativas-2025 .content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#expectativas-2025 h2,
+#tiempo-etc h2 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#expectativas-2025 h5,
+#tiempo-etc h5 {
+    font-size: 1.25rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+#expectativas-2025 p,
+#tiempo-etc p {
+    font-size: 1rem;
+    color: #444;
+    text-align: justify;
+}
+
+/* Los estudios */
+#tiempo-etc {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#tiempo-etc .list-group-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+
+
+
 

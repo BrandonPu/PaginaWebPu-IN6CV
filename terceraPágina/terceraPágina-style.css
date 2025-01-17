@@ -1,26 +1,60 @@
-/* Estilo para el navbar lateral */
-.sidebar {
-  width: 220px;
-  height: 100vh;
-  background-color: #f8f9fa; 
-  padding: 20px;
-  position: fixed; 
-}
-  
-.sidebar .navbar-brand {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  display: block;
-  text-align: center;
+.navbar {
+    border-bottom: 3px solid orange;
 }
 
-.sidebar .brand-logo {
-  width: 160px;
-  height: auto;
+body{
+    background-image: url('/assets/image/FondoKinal.jpg');
+    background-size: cover; 
+    background-position: center center;
+    background-attachment: fixed;
 }
-  
 
-  
+/**/
 
-  
-  
+.text-outline {
+    color: white;
+    text-shadow: -1px -1px 0 #007BFF, 1px -1px 0 #007BFF, -1px 1px 0 #007BFF, 1px 1px 0 #007BFF;
+}
+
+footer {
+    background-color: #001286e0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+section{
+    display: flex;
+    width: 600px;
+    height: 430px;
+    justify-content: center;
+    
+}
+
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 5;
+    transition: .5s ease;
+    border-radius: 20px;
+    margin: 1%;
+}
+
+section img:hover{
+    width: 60%;
+    opacity: 1;
+}
+
+.mt-5 {
+    position: relative;
+    height: auto; 
+    padding-bottom: 200px;
+}
+
+footer {
+    clear: both; 
+    position: relative;
+    z-index: 1;
+}

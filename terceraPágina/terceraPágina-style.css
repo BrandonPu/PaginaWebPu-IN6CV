@@ -1,60 +1,39 @@
+/* Estilo para la barra de navegación */
 .navbar {
     border-bottom: 3px solid orange;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 2px solid #ddd;
 }
 
-body{
+.navbar .nav-link {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+.navbar .nav-link:hover {
+    color: #0056b3 !important;
+    text-decoration: underline;
+}
+
+/* Estilo general del cuerpo */
+body {
     background-image: url('/assets/image/FondoKinal.jpg');
-    background-size: cover; 
+    background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    color: #333;
 }
 
-/**/
-
-.text-outline {
-    color: white;
-    text-shadow: -1px -1px 0 #007BFF, 1px -1px 0 #007BFF, -1px 1px 0 #007BFF, 1px 1px 0 #007BFF;
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    background-color: #001286e0;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-
-
-section{
-    display: flex;
-    width: 600px;
-    height: 430px;
-    justify-content: center;
-    
-}
-
-section img{
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: 5;
-    transition: .5s ease;
-    border-radius: 20px;
-    margin: 1%;
-}
-
-section img:hover{
-    width: 60%;
-    opacity: 1;
-}
-
-.mt-5 {
-    position: relative;
-    height: auto; 
-    padding-bottom: 200px;
-}
-
-footer {
-    clear: both; 
-    position: relative;
-    z-index: 1;
+/* Encabezados */
+h1, h2, h3, h4, h5 {
+    color: #333;
 }

@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.overflow-hidden {
+    margin-bottom: 30px;
+}
+
+.d-md-flex {
+    justify-content: center;
+}

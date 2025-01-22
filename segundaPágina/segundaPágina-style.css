@@ -1,3 +1,17 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
 /* Encabezado */
 header {
     background: #3498db;
@@ -18,12 +32,48 @@ header ul li a {
     transition: color 0.3s;
 }
 
+header ul li a:hover {
+    color: #ffcc00; /* Color al pasar el mouse */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar .navbar-links a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de contenido general */
+main {
+    padding: 2rem;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
 /* Biografía */
 #mi-biografia .content-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 20px; 
+    gap: 20px;
 }
 
 #mi-biografia .text-content {
@@ -47,7 +97,6 @@ header ul li a {
 }
 
 /* Expectativas 2025 */
-
 #expectativas-2025 {
     padding: 20px;
     background-color: #f9f9f9;
@@ -103,7 +152,57 @@ header ul li a {
     padding: 10px;
 }
 
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
 
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .image-content {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .image-content img {
+        width: 80%;
+    }
 
+    .text-content {
+        max-width: 90%;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .header ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+    }
+}

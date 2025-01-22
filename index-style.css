@@ -1,76 +1,131 @@
-body{
-    background-image: url('assets/image/FondoLibros.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    margin: 0;
-    font-family: Arial, sans-serif;
+
+
+/* Estilo del encabezado */
+header {
+    background-color: #da892cde;
+    color: white;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 header ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
-#porque-me-gusta, #tiempo-dedicado, #otros-aspectos {
-    background-color: #e5dcca;
-    padding: 30px;
+header ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.image-content img {
+    max-width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
 }
 
-#porque-me-gusta .content-wrapper, 
-#tiempo-dedicado .content-wrapper, 
-#otros-aspectos .content-wrapper {
+.content-wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-between;
 }
 
-#porque-me-gusta .content-wrapper, 
-#tiempo-dedicado .content-wrapper, 
-#otros-aspectos .content-wrapper {
-    flex-direction: row;
+.text-content {
+    flex: 1;
+    min-width: 300px;
 }
 
-#porque-me-gusta h2, 
-#tiempo-dedicado h2, 
-#otros-aspectos h2 {
-    font-size: 1.75rem;
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    color: #ff0000;
-    margin-bottom: 20px;
+.image-content {
+    flex: 1;
+    min-width: 300px;
 }
 
-#porque-me-gusta p, 
-#tiempo-dedicado p, 
-#otros-aspectos p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #000000;
-    margin-bottom: 20px;
-}
-
-#porque-me-gusta .image-content, 
-#tiempo-dedicado .image-content, 
-#otros-aspectos .image-content {
-    flex: 0 0 40%;
-    max-width: 100%;
-}
-
-/* Footer */
 footer {
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    border-top: 2px solid #0056b3;
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
 }
 
 footer p {
-    margin: 0;
     font-size: 1rem;
+}
+
+
+.navbar {
+    background-color: #007bff;
+    padding: 10px 20px;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: white;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content {
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image-content {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
 }
